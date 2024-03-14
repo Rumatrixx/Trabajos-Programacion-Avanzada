@@ -1,0 +1,7 @@
+I started my project making all the classes that my project needed, I made the class Vehicle, Engine and the types of vehicle inherited from vehicle as Car, Truck,
+motorcycle and Yatch, defining their components and if it was necesarry, inheriting them to the derived classes. Also i created a dictionary and a list to save the engines
+and the vehicles. After I was sure my classes had all the properties for the code I created a method to calculate the gas consumption of each car, following the formula 
+that the exercise gave. Then I decided to create two more methods that will allow me to do the process of creating an engine and creating a vehicle. Finally I coded the 
+menu option for the project giving different options in order to achieve the requierements of the project.
+
+
