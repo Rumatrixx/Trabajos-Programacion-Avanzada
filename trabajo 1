@@ -1,188 +1,104 @@
-{
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "provenance": [],
-      "authorship_tag": "ABX9TyOjML+1J4hR1K/ZKnzVglGT"
-    },
-    "kernelspec": {
-      "name": "python3",
-      "display_name": "Python 3"
-    },
-    "language_info": {
-      "name": "python"
-    }
-  },
-  "cells": [
-    {
-      "cell_type": "code",
-      "execution_count": 1,
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 807
-        },
-        "id": "qjXCnJRAGgJN",
-        "outputId": "46a6cf82-e51c-4d77-8eb9-1a5f07f9ebf5"
-      },
-      "outputs": [
-        {
-          "name": "stdout",
-          "output_type": "stream",
-          "text": [
-            "\n",
-            "Please, choose an option \n",
-            "1.Create an Engine\n",
-            "2.Create a vehicle\n",
-            "3.Show all engines\n",
-            "4.Show all vehicles\n",
-            "5.Exit'\n",
-            "\n",
-            "1\n",
-            "Please, write a name to identify the engine:juan\n",
-            "Please, write the type of engine:a\n",
-            "Please, write the potency in an integer value for the engine:1\n",
-            "Please, write the weight in a decimal value for the engine:1\n",
-            "\n",
-            "Please, choose an option \n",
-            "1.Create an Engine\n",
-            "2.Create a vehicle\n",
-            "3.Show all engines\n",
-            "4.Show all vehicles\n",
-            "5.Exit'\n",
-            "\n",
-            "2\n",
-            "please write wich type of vehicle is yours (Car, Truck, Yatch, Motorcycle):Car\n",
-            "Please, write the name of the engine for the Car:juan\n",
-            "Please, write the model for the Car:a\n",
-            "Please, write the year for the Car:1\n",
-            "Please, write the chassis (A or B) for the Car:A\n",
-            "Please, write the gas consumption for the vehicle: 1\n"
-          ]
-        },
-        {
-          "output_type": "error",
-          "ename": "NameError",
-          "evalue": "name 'engine_name' is not defined",
-          "traceback": [
-            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
-            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
-            "\u001b[0;32m<ipython-input-1-0434a2b068a0>\u001b[0m in \u001b[0;36m<cell line: 105>\u001b[0;34m()\u001b[0m\n\u001b[1;32m    104\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    105\u001b[0m \u001b[0;32mif\u001b[0m \u001b[0m__name__\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;34m\"__main__\"\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 106\u001b[0;31m     \u001b[0mmain\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
-            "\u001b[0;32m<ipython-input-1-0434a2b068a0>\u001b[0m in \u001b[0;36mmain\u001b[0;34m()\u001b[0m\n\u001b[1;32m     92\u001b[0m     \u001b[0;32mwhile\u001b[0m \u001b[0moption\u001b[0m \u001b[0;34m!=\u001b[0m \u001b[0;36m5\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     93\u001b[0m         \u001b[0;32mif\u001b[0m \u001b[0moption\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;36m1\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 94\u001b[0;31m             \u001b[0mCreate_Engine\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     95\u001b[0m         \u001b[0;32melif\u001b[0m \u001b[0moption\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;36m2\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     96\u001b[0m             \u001b[0mCreate_Vehicle\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m<ipython-input-1-0434a2b068a0>\u001b[0m in \u001b[0;36mCreate_Engine\u001b[0;34m()\u001b[0m\n\u001b[1;32m     66\u001b[0m         \u001b[0mnew_engine\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mEngine\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mname\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mtype_motor\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mpotency\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mweight\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     67\u001b[0m         \u001b[0mengines\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mname\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mnew_engine\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 68\u001b[0;31m         \u001b[0mmain\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     69\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     70\u001b[0m     \u001b[0;32mdef\u001b[0m \u001b[0mCreate_Vehicle\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m<ipython-input-1-0434a2b068a0>\u001b[0m in \u001b[0;36mmain\u001b[0;34m()\u001b[0m\n\u001b[1;32m     94\u001b[0m             \u001b[0mCreate_Engine\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     95\u001b[0m         \u001b[0;32melif\u001b[0m \u001b[0moption\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;36m2\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 96\u001b[0;31m             \u001b[0mCreate_Vehicle\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     97\u001b[0m         \u001b[0;32melif\u001b[0m \u001b[0moption\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;36m3\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     98\u001b[0m             \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mengines\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;32m<ipython-input-1-0434a2b068a0>\u001b[0m in \u001b[0;36mCreate_Vehicle\u001b[0;34m()\u001b[0m\n\u001b[1;32m     76\u001b[0m         \u001b[0mgas_consumption\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mcalculate_comsumption\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     77\u001b[0m         \u001b[0;32mif\u001b[0m \u001b[0mvehicle_type\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;34m\"Car\"\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 78\u001b[0;31m             \u001b[0mvehicles\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mappend\u001b[0m\u001b[0;34m(\u001b[0m \u001b[0mCar\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mengines\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mengine_name\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mmodel\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0myear\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mchassis\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mgas_consumption\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     79\u001b[0m         \u001b[0;32melif\u001b[0m \u001b[0mvehicle_type\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;34m\"Truck\"\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     80\u001b[0m             \u001b[0mvehicles\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mappend\u001b[0m\u001b[0;34m(\u001b[0m \u001b[0mTruck\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mengines\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mengine_name\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mmodel\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0myear\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mchassis\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mgas_consumption\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;31mNameError\u001b[0m: name 'engine_name' is not defined"
-          ]
-        }
-      ],
-      "source": [
-        "class Engine:\n",
-        "\n",
-        "    def __init__(self, name, type_motor: str, potency: int, weight: float):\n",
-        "        self.name = name\n",
-        "        self.type_ = type_motor\n",
-        "        self.potency = potency\n",
-        "        self.weight = weight\n",
-        "\n",
-        "# ============================== Class Vehicle ==============================\n",
-        "class Vehicle:\n",
-        "\n",
-        "    def __init__(self, engine: Engine, model: str, year: int, chassis: str, gas_consumption: float):\n",
-        "        if chassis not in [\"A\", \"B\"]:\n",
-        "            raise ValueError(\"This chassis is not valid.\")\n",
-        "\n",
-        "        if year < 1990:\n",
-        "            raise ValueError(\"The year is not in a valid range.\")\n",
-        "        self.vehicle_type = None\n",
-        "        self.chassis = chassis\n",
-        "        self.model = model\n",
-        "        self.year = year\n",
-        "        self.gas_consumption = None\n",
-        "        self.engine = engine\n",
-        "\n",
-        "    def calculate_comsumption(self):\n",
-        "        if self.chassis == 'A':\n",
-        "            consumption_gas = (1.1 * self.engine.potency) + (0.2 * self.engine.weight) - 0.3\n",
-        "        elif self.chassis == 'B':\n",
-        "            consumption_gas = (1.1 * self.engine.potency) + (0.2 * self.engine.weight) - 0.3\n",
-        "        self.gas_consumption = consumption_gas\n",
-        "\n",
-        " # ============================== Classes of Vehicles ==============================\n",
-        "\n",
-        "class Car(Vehicle):\n",
-        "    \"\"\"This class is a concrete definition for a Car.\"\"\"\n",
-        "    def __init__(self, engine, model, year, chassis, gas_consumption):\n",
-        "        super().__init__(engine, model, year, chassis, gas_consumption)\n",
-        "\n",
-        "class Truck(Vehicle):\n",
-        "    \"\"\"This class is a concrete definition for a truck.\"\"\"\n",
-        "    def __init__(self, engine, model, year, chassis, gas_consumption):\n",
-        "        super().__init__(engine, model, year, chassis, gas_consumption)\n",
-        "\n",
-        "class Yatch(Vehicle):\n",
-        "    \"\"\"This class is a concrete definition for a yatch.\"\"\"\n",
-        "    def __init__(self, engine, model, year, chassis, gas_consumption):\n",
-        "        super().__init__(engine, model, year, chassis, gas_consumption)\n",
-        "\n",
-        "class Motorcycle(Vehicle):\n",
-        "    \"\"\"This class is a concrete definition for a motorcycle.\"\"\"\n",
-        "    def __init__(self, engine, model, year, chassis, gas_consumption):\n",
-        "        super().__init__(engine, model, year, chassis, gas_consumption)\n",
-        "\n",
-        "# ============================== Menu ==============================\n",
-        "def main():\n",
-        "\n",
-        "    global engines\n",
-        "    engines = {}\n",
-        "    global vehicles\n",
-        "    vehicles = []\n",
-        "\n",
-        "    def Create_Engine():\n",
-        "        name = input(\"Please, write a name to identify the engine:\")\n",
-        "        type_motor = input(\"Please, write the type of engine:\")\n",
-        "        potency = int(input(\"Please, write the potency in an integer value for the engine:\"))\n",
-        "        weight = float(input(\"Please, write the weight in a decimal value for the engine:\"))\n",
-        "        new_engine = Engine(name, type_motor, potency, weight)\n",
-        "        engines[name] = new_engine\n",
-        "        main()\n",
-        "\n",
-        "    def Create_Vehicle():\n",
-        "        vehicle_type = input(f\"please write wich type of vehicle is yours (Car, Truck, Yatch, Motorcycle):\")\n",
-        "        engine = input(f\"Please, write the name of the engine for the {vehicle_type}:\")\n",
-        "        model = input(f\"Please, write the model for the {vehicle_type}:\")\n",
-        "        year = int(input(f\"Please, write the year for the {vehicle_type}:\"))\n",
-        "        chassis = input(f\"Please, write the chassis (A or B) for the {vehicle_type}:\")\n",
-        "        gas_consumption = calculate_comsumption()\n",
-        "        if vehicle_type == \"Car\":\n",
-        "            vehicles.append( Car(engines[engine_name], model, year, chassis, gas_consumption) )\n",
-        "        elif vehicle_type == \"Truck\":\n",
-        "            vehicles.append( Truck(engines[engine_name], model, year, chassis, gas_consumption) )\n",
-        "        elif vehicle_type == \"Yatch\":\n",
-        "            vehicles.append( Yatch(engines[engine_name], model, year, chassis, gas_consumption) )\n",
-        "        elif vehicle_type == \"Motorcycle\":\n",
-        "            vehicles.append( Motorcycle(engines[engine_name], model, year, chassis, gas_consumption) )\n",
-        "\n",
-        "    print(\"\\nPlease, choose an option \\n1.Create an Engine\\n2.Create a vehicle\\n3.Show all engines\\n4.Show all vehicles\\n5.Exit'\\n\")\n",
-        "    option = int(input())\n",
-        "\n",
-        "    while option != 5:\n",
-        "        if option == 1:\n",
-        "            Create_Engine()\n",
-        "        elif option == 2:\n",
-        "            Create_Vehicle()\n",
-        "        elif option == 3:\n",
-        "            print(engines)\n",
-        "        elif option == 4:\n",
-        "            print(vehicles)\n",
-        "\n",
-        "        print(\"\\nPlease, choose an option \\n1.Create an Engine\\n2.Create a vehicle\\n3.Show all engines\\n4.Show all vehicles\\n5.Exit\\n\")\n",
-        "        option = int(input())\n",
-        "\n",
-        "if __name__ == \"__main__\":\n",
-        "    main()"
-      ]
-    }
-  ]
-}
+class Engine:
+
+    def __init__(self, name, type_motor: str, potency: int, weight: float):
+        self.name = name
+        self.type_ = type_motor
+        self.potency = potency
+        self.weight = weight
+
+# ============================== Class Vehicle ==============================
+class Vehicle:
+
+    def __init__(self, engine: Engine, model: str, year: int, chassis: str, gas_consumption: float):
+        if chassis not in ["A", "B"]:
+            raise ValueError("This chassis is not valid.")
+
+        if year < 1990:
+            raise ValueError("The year is not in a valid range.")
+        self.vehicle_type = None
+        self.chassis = chassis
+        self.model = model
+        self.year = year
+        self.gas_consumption = None
+        self.engine = engine
+
+    def calculate_comsumption(self):
+        if self.chassis == 'A':
+            consumption_gas = (1.1 * self.engine.potency) + (0.2 * self.engine.weight) - 0.3
+        elif self.chassis == 'B':
+            consumption_gas = (1.1 * self.engine.potency) + (0.2 * self.engine.weight) - 0.3
+        self.gas_consumption = consumption_gas
+
+ # ============================== Classes of Vehicles ==============================
+
+class Car(Vehicle):
+    """This class is a concrete definition for a Car."""
+    def __init__(self, engine, model, year, chassis, gas_consumption):
+        super().__init__(engine, model, year, chassis, gas_consumption)
+
+class Truck(Vehicle):
+    """This class is a concrete definition for a truck."""
+    def __init__(self, engine, model, year, chassis, gas_consumption):
+        super().__init__(engine, model, year, chassis, gas_consumption)
+
+class Yatch(Vehicle):
+    """This class is a concrete definition for a yatch."""
+    def __init__(self, engine, model, year, chassis, gas_consumption):
+        super().__init__(engine, model, year, chassis, gas_consumption)
+
+class Motorcycle(Vehicle):
+    """This class is a concrete definition for a motorcycle."""
+    def __init__(self, engine, model, year, chassis, gas_consumption):
+        super().__init__(engine, model, year, chassis, gas_consumption)
+
+# ============================== Menu ==============================
+def main():
+
+    global engines
+    engines = {}
+    global vehicles
+    vehicles = []
+
+    def Create_Engine():
+        name = input("Please, write a name to identify the engine:")
+        type_motor = input("Please, write the type of engine:")
+        potency = int(input("Please, write the potency in an integer value for the engine:"))
+        weight = float(input("Please, write the weight in a decimal value for the engine:"))
+        new_engine = Engine(name, type_motor, potency, weight)
+        engines[name] = new_engine
+        main()
+
+    def Create_Vehicle():
+        vehicle_type = input(f"please write wich type of vehicle is yours (Car, Truck, Yatch, Motorcycle):")
+        engine = input(f"Please, write the name of the engine for the {vehicle_type}:")
+        model = input(f"Please, write the model for the {vehicle_type}:")
+        year = int(input(f"Please, write the year for the {vehicle_type}:"))
+        chassis = input(f"Please, write the chassis (A or B) for the {vehicle_type}:")
+        gas_consumption = calculate_comsumption()
+        if vehicle_type == "Car":
+            vehicles.append( Car(engines[engine_name], model, year, chassis, gas_consumption) )
+        elif vehicle_type == "Truck":
+            vehicles.append( Truck(engines[engine_name], model, year, chassis, gas_consumption) )
+        elif vehicle_type == "Yatch":
+            vehicles.append( Yatch(engines[engine_name], model, year, chassis, gas_consumption) )
+        elif vehicle_type == "Motorcycle":
+            vehicles.append( Motorcycle(engines[engine_name], model, year, chassis, gas_consumption) )
+
+    print("\nPlease, choose an option \n1.Create an Engine\n2.Create a vehicle\n3.Show all engines\n4.Show all vehicles\n5.Exit'\n")
+    option = int(input())
+
+    while option != 5:
+        if option == 1:
+            Create_Engine()
+        elif option == 2:
+            Create_Vehicle()
+        elif option == 3:
+            print(engines)
+        elif option == 4:
+            print(vehicles)
+
+        print("\nPlease, choose an option \n1.Create an Engine\n2.Create a vehicle\n3.Show all engines\n4.Show all vehicles\n5.Exit\n")
+        option = int(input())
+
+if __name__ == "__main__":
+    main()
